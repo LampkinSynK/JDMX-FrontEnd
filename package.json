@@ -1,7 +1,7 @@
 {
   "name": "ev2c14",
   "version": "0.1.1",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://jdmx.onrender.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
