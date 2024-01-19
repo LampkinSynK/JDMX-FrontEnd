@@ -1,0 +1,510 @@
+/* Video Placement */
+.car_videos {
+    width: 100%;
+    height: 34vw;
+    object-fit: cover;
+}
+
+.car_carousel {
+    display: flex;
+    
+}
+
+.video1 {
+    opacity: 1;
+}
+
+.video2 {
+    opacity: 0;
+}
+
+.video3 {
+    opacity: 0;
+}
+.video4 {
+    opacity: 0;
+}
+
+/* Video Control Placement */
+.forward_btn {
+    margin: auto;
+    grid-area: 3/ 5/ 3/ 5;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 90vw;
+    font-size: 2vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.45);
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.back_btn {
+    margin: auto;
+    grid-area: 3/ 1/ 3/ 1;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 90vw;
+    font-size: 2vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.45);
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.change_buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(5, 6.8vw);
+    grid-template-columns: repeat(5, 20vw);
+}
+
+.pause_btn {
+    margin: auto;
+    grid-area: 5/ 1/ 5/ 1;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 90vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.45);
+    outline: none;
+}
+
+/* Main Body Placement */
+.car_body > h3 {
+    color: rgb(255, 255, 255);
+    margin-top: 8vh;
+    font-size: 60px;
+    text-align: center;
+}
+
+.line {
+    display: flex;
+    margin: 10px auto 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.267);
+    border-radius: 1px;
+    width: 870px;
+
+}
+
+.lineup {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.lineup > a {
+    cursor: pointer;
+    margin: 0px 60px 0px 60px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    transition: all .4s;
+}
+
+.lineup > a:hover {
+    color: red;
+    transition: all .5s;
+}
+
+.sell_carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    height: 400px;
+    align-items: center;
+}
+
+.car_card {
+    background-color: rgb(99, 133, 99);
+    border-radius: 20px;
+    width: 575px;
+    height: 300px;
+    border-radius: 25px 20px 20px 25px;
+    margin: auto;
+    transition: all 0.4s;
+    margin: 0px 20px;
+    
+}
+.car_card:hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.car_card > img {
+    width: 64.4%;
+    height: 300px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    overflow: hidden; 
+}
+
+.description {
+    width: 35.6%;
+    float: right;
+}
+
+.description > p {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: gainsboro;
+}
+
+.description > h5 {
+    font-size: 32px;
+}
+
+.description > button {
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+    border: 0;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    transition: all .4s;
+}
+
+.description > button:hover {
+    background-color: rgba(255, 255, 255, 0.651);
+    transition: all .4s;
+}
+
+
+.prices {
+    display: flex;
+
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin: 10px auto auto auto;
+    
+}
+
+.money > span {
+    font-size: 24px;
+}
+
+.mpg > span {
+    font-size: 24px;
+}
+
+.money_text {
+    font-size: 10px;
+    color: gainsboro;
+    word-spacing: normal;
+}
+
+.mpg {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin: 10px auto auto auto;
+}
+
+.mpg > p {
+    font-size: 10px;
+    color: gainsboro;
+    word-spacing: normal;
+}
+
+
+.exclaimer {
+    display: flex;
+    
+}
+.exclaimer > p{
+    font-size: 10px;
+    color: gainsboro;
+}
+.move_right {
+    margin-left: 45px;
+}
+
+.shopping > h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.help_desk {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 500px;
+}
+
+.help_selection {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    background: linear-gradient(#252525, #252525 50%, #cc2e2e 50%, #5c1414);
+    background-size: 100% 200%;
+    border-radius: 20px;
+    width: 95%;
+    height: 100%;
+    border: solid .1px rgb(88, 88, 88);
+    z-index: 1;
+    transition: background .2s;
+}
+
+.help_selection > p {
+    font-size: 2vw;
+    font-weight: bold;
+    align-self: center;
+}
+
+.help_selection:hover {
+    background-position: 100% 100%;
+} 
+
+.discover > h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 60px;
+}
+
+.discover_items {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: 40vh;
+}
+
+.chatrepair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    background: rgb(59, 58, 58);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.637);
+    border-radius: 20px;
+    width: 95%;
+    height: 100%;
+    border: solid .1px rgb(88, 88, 88);
+    z-index: 1;
+    transition: background .2s;
+}
+
+.chatrepair {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.chatrepair:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    transition: background .2s;
+}
+
+#selectBox {
+    display: none;
+    background-color: rgba(255, 239, 239, 0.712);
+    color: black;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+#selectBox > option {
+    font-size: 30px;
+    color: black;
+    background-color: rgba(255, 239, 239, 0.712);
+}
+/* End Mainbody Styling */
+
+/* Homepage Responsiveness */
+@media screen and (max-width: 1247px) {
+    .sell_carousel {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 320px);
+        grid-template-rows: repeat(6, 200px);
+        gap: 2px;
+        overflow: scroll;
+    }
+    .first_car {
+        grid-area: 1/1/3/3;
+    }
+
+    .second_car {
+        grid-area: 3/1/5/3;
+    }
+
+    .third_car {
+        grid-area: 5/1/6/3;
+    }
+
+    .help_desk {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: 500px 500px;
+        gap: 1vw;
+    }
+
+    .help_selection > p {
+        font-size: 4vw;
+        font-weight: bold;
+        align-self: center;
+    }
+}
+    
+    @media screen and (max-width: 908px){
+        .lineup{
+            display: none;
+        }
+        .line {
+            display: none;
+        }
+        #selectBox {
+            display: flex;
+            margin: 40px auto auto auto;
+        }
+
+        .videos > video {
+            width: 100%;
+            height: 40vw;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+            transition: all 1.2s linear;
+            z-index: -10;
+            object-fit: cover;
+            position: absolute;
+            
+        }
+
+        .forward_btn {
+            margin: auto;
+            grid-area: 2/ 5/ 3/ 5;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 90vw;
+            font-size: 2vw;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45);
+            outline: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .back_btn {
+            margin: auto;
+            grid-area: 2/ 1/ 3/ 1;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 90vw;
+            font-size: 2vw;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45);
+            outline: none;
+            color: rgb(0, 0, 0);
+        }
+        
+        .change_buttons {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: repeat(5, 6.8vw);
+            grid-template-columns: repeat(5, 20vw);
+        }
+        
+        .pause_btn {
+            margin: auto;
+            grid-area: 4/ 1/ 5/ 1;
+            width: 40px;
+            cursor: pointer;
+            border-radius: 90vw;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45);
+            outline: none;
+            transform: scale(.8);
+        }
+    }
+
+    @media screen and (max-width: 638px) and (min-width: 280px) {
+        .first_car {
+            transform: scale(.6);
+        }
+
+        .first_car:hover {
+            transform: none !important;
+        }
+
+        .second_car {
+            transform: scale(.6);
+        }
+
+        .second_car:hover {
+            transform: none !important;
+        }
+
+        .third_car {
+            transform: scale(.6);
+        }
+
+        .third_car:hover {
+            transform: none !important;
+        }
+        
+        .chatrepair p {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 280px){
+        .sell_carousel {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(6, 120px);
+            gap: 2px;
+            overflow: scroll;
+        }
+        
+        .first_car {
+            transform: scale(.45);
+        }
+
+        .first_car:hover {
+            transform: none !important;
+        }
+
+        .second_car {
+            transform: scale(.45);
+        }
+
+        .second_car:hover {
+            transform: none !important;
+        }
+
+        .third_car {
+            transform: scale(.45);
+        }
+
+        .third_car:hover {
+            transform: none !important;
+        }
+        
+        .chatrepair p {
+            font-size: 20px;
+        }
+    }
