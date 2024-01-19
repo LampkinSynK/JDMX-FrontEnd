@@ -5,7 +5,7 @@ export default function Products() {
   const [backendData, setBackendData] = useState([{}])
 
     useEffect(() => {
-        fetch("https://jdmx.onrender.com/api").then(
+        fetch("/api").then(
             res => res.json()
         ).then(data=> {
             setBackendData(data)
