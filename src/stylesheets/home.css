@@ -1,3 +1,15 @@
+#imported {
+    display: none;
+}
+
+#oldJdm {
+    display: none;
+}
+
+#modernJdm {
+    display: none;
+}
+
 /* Video Placement */
 .car_videos {
     width: 100%;

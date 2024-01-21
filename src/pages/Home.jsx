@@ -19,6 +19,51 @@ export default function Home() {
     let chat = () => {
         window.location.replace("contact");
     }
+
+    let newJdm = () => {
+        const newJdm = document.getElementById('newJdm')
+        const imported = document.getElementById('imported')
+        const oldJdm = document.getElementById('oldJdm')
+        const modernJdm = document.getElementById('modernJdm')
+        imported.style.display = 'none';
+        oldJdm.style.display = 'none';
+        modernJdm.style.display = 'none';
+        newJdm.style.display = 'block';
+    }
+
+    let imported = () => {
+        const newJdm = document.getElementById('newJdm')
+        const imported = document.getElementById('imported')
+        const oldJdm = document.getElementById('oldJdm')
+        const modernJdm = document.getElementById('modernJdm')
+        imported.style.display = 'block';
+        oldJdm.style.display = 'none';
+        modernJdm.style.display = 'none';
+        newJdm.style.display = 'none';
+    }
+
+    let oldJdm = () => {
+        const newJdm = document.getElementById('newJdm')
+        const imported = document.getElementById('imported')
+        const oldJdm = document.getElementById('oldJdm')
+        const modernJdm = document.getElementById('modernJdm')
+        imported.style.display = 'none';
+        oldJdm.style.display = 'block';
+        modernJdm.style.display = 'none';
+        newJdm.style.display = 'none';
+    }
+
+    let modernJdm = () => {
+        const newJdm = document.getElementById('newJdm')
+        const imported = document.getElementById('imported')
+        const oldJdm = document.getElementById('oldJdm')
+        const modernJdm = document.getElementById('modernJdm')
+        imported.style.display = 'none';
+        oldJdm.style.display = 'none';
+        modernJdm.style.display = 'block';
+        newJdm.style.display = 'none';
+    }
+
   return (
     <div>
       <body>
@@ -63,10 +108,10 @@ export default function Home() {
         <h3>Explore All Vehicles</h3>
         {/* <!-- Regular List --> */}
         <div class="lineup">
-            <a onClick=''>New JDM</a>
-            <a onClick=''>Imported</a>
-            <a onclick="oldJDM()">90's JDM</a>
-            <a onclick="earlyJDM()">2000's JDM</a>
+            <a onClick={newJdm}>New JDM</a>
+            <a onClick={imported}>Imported</a>
+            <a onClick={oldJdm}>90's JDM</a>
+            <a onClick={modernJdm}>2000's JDM</a>
         </div> 
         {/* <!-- Mobile Dropdown --> */}
         <select id="selectBox" onchange="changeFunc();">
@@ -77,9 +122,26 @@ export default function Home() {
         </select>
         <div class="line"></div>
         <div class="sell_carousel">
+            <div id='newJdm'>
             <CarCard {...json.cars[0]}/>
             <CarCard {...json.cars[1]}/>
             <CarCard {...json.cars[2]}/>
+            </div>
+            <div id='imported'>
+            <CarCard {...json.cars[6]}/>
+            <CarCard {...json.cars[8]}/>
+            <CarCard {...json.cars[7]}/>
+            </div>
+            <div id='oldJdm'>
+            <CarCard {...json.cars[4]}/>
+            <CarCard {...json.cars[3]}/>
+            <CarCard {...json.cars[5]}/>
+            </div>
+            <div id='modernJdm'>
+            <CarCard {...json.cars[9]}/>
+            <CarCard {...json.cars[10]}/>
+            <CarCard {...json.cars[11]}/>
+            </div>
         </div>
     </section>
 
