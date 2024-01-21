@@ -24,6 +24,7 @@
 .chat_form > form > label {
     font-size: 16px;
     margin-bottom: 12px;
+    text-align: left;
 }
 
 .chat_form > form > input:hover {

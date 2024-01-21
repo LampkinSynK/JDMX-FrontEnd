@@ -17,10 +17,9 @@ export default function Nav() {
     <nav class="navbar" id="navbar">
         <a></a>
         <a href="/"><img src="images/JDMX_Logo.png" alt="JDMXHome" class='logo' width="100px" height="100px" /></a>
-        <a class="nav_items_right" href="inventory#all">Vehicles</a>
-        <a class="nav_items" href="inventory#import">Import</a>
-        <a class="nav_items" href="inventory#trending">Trending</a>
-        <a class="nav_items" href="contact.html">Support</a>
+        <a class="nav_items_right" href="/">Home</a>
+        <a class="nav_items" href="inventory">Vehicles</a>
+        <a class="nav_items" href="contact">Support</a>
         <a class="search_icon" href="#"><img src="assets/search.png" width="25px" alt="search" /></a>
         <a class="login_icon" href="login.html"><img src="assets/usericon.png" width="30px" alt="login" /></a>
     </nav>

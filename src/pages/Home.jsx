@@ -64,6 +64,27 @@ export default function Home() {
         newJdm.style.display = 'none';
     }
 
+    let changeFunc = () => {
+        let selectBox = document.getElementById("selectBox");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        switch (selectedValue) {
+            case '1':
+                newJdm()
+                break;
+            case '2':
+                imported();
+                break;
+            case '3':
+                oldJdm();
+                break;
+            case '4':
+                modernJdm();
+                break;
+            default:
+                break;
+        }
+    }
+
   return (
     <div>
       <body>
@@ -114,7 +135,7 @@ export default function Home() {
             <a onClick={modernJdm}>2000's JDM</a>
         </div> 
         {/* <!-- Mobile Dropdown --> */}
-        <select id="selectBox" onchange="changeFunc();">
+        <select id="selectBox" onChange={changeFunc}>
             <option value="1">New JDM</option>
             <option value="2">Imported</option>
             <option value="3">90's JDM</option>
