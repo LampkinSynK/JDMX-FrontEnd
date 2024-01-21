@@ -28,7 +28,7 @@ export default function Home() {
         imported.style.display = 'none';
         oldJdm.style.display = 'none';
         modernJdm.style.display = 'none';
-        newJdm.style.display = 'block';
+        newJdm.style.display = 'flex';
     }
 
     let imported = () => {
@@ -36,7 +36,7 @@ export default function Home() {
         const imported = document.getElementById('imported')
         const oldJdm = document.getElementById('oldJdm')
         const modernJdm = document.getElementById('modernJdm')
-        imported.style.display = 'block';
+        imported.style.display = 'flex';
         oldJdm.style.display = 'none';
         modernJdm.style.display = 'none';
         newJdm.style.display = 'none';
@@ -48,7 +48,7 @@ export default function Home() {
         const oldJdm = document.getElementById('oldJdm')
         const modernJdm = document.getElementById('modernJdm')
         imported.style.display = 'none';
-        oldJdm.style.display = 'block';
+        oldJdm.style.display = 'flex';
         modernJdm.style.display = 'none';
         newJdm.style.display = 'none';
     }
@@ -60,7 +60,7 @@ export default function Home() {
         const modernJdm = document.getElementById('modernJdm')
         imported.style.display = 'none';
         oldJdm.style.display = 'none';
-        modernJdm.style.display = 'block';
+        modernJdm.style.display = 'flex';
         newJdm.style.display = 'none';
     }
 

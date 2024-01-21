@@ -1,3 +1,7 @@
+#newJdm {
+    display: flex;
+}
+
 #imported {
     display: none;
 }
