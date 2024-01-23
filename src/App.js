@@ -11,6 +11,9 @@ import Inventory from './pages/Inventory';
 import Footer from './pages/Footer';
 import Product from './pages/Products';
 import Terms from './pages/Terms';
+import Login from './pages/Login'
+import Signup from './pages/Signup';
+import Cart from './pages/Cart';
 
 function App() {
   return (
@@ -27,6 +30,10 @@ function App() {
             <Route path="/inventory" element={<Inventory />}></Route>
             <Route path="/p" element={<Product />}></Route>
             <Route path="/terms" element={<Terms />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/signup" element={<Signup />}></Route>
+            <Route path="/cart" element={<Cart />}></Route>
+
           </Routes>
           < Footer />
           

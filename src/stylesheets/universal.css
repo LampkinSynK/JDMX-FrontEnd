@@ -41,6 +41,14 @@ footer {
     background: radial-gradient(circle, rgba(27,20,20,1) 0%, rgba(0,0,0,1) 0%, rgba(15,5,5,1) 100%);
 }
 
+.login_icon p{
+    font-size: 18px;  
+}
+
+.login_icon {
+    text-decoration: none !important;
+}
+
 .logo {
     margin-right: auto;
 }

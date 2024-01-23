@@ -1,0 +1,142 @@
+.login_card {
+    display: flex;
+    /* background-color: rgb(154, 8, 8); */
+    background: rgb(213,27,27);
+    background: linear-gradient(0deg, rgba(213,27,27,1) 0%, rgba(103,0,0,1) 100%);
+    width: 850px;
+    height: 432px;
+    margin: auto;
+    border-radius: 13px;
+}
+
+.signup_section {
+    background: rgb(213,27,27);
+    background: linear-gradient(0deg, rgba(213,27,27,1) 0%, rgba(103,0,0,1) 100%);
+    margin: auto;
+    width: 700px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signup_section input {
+    color: black;
+    width: 275px !important;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 20px;   
+}
+
+.signup_section h4 {
+    margin-bottom: 24px;
+}
+
+.signup_section label {
+    font-size: 15px;
+}
+
+#login_route {
+    font-size: 18px;
+}
+
+.login_photo {
+    width: 400px;
+    height: 432px;
+    overflow: hidden;
+    display: flex;
+    justify-self: flex-start;
+    border-radius: 13px 0px 0px 13px;
+    
+}
+
+#login_img {
+    width: 768px;
+    height: 432px;
+    object-fit: cover;
+    overflow: hidden;
+    /* border-radius: 13px; */
+}
+
+.login_section {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_section label {
+    font-size: 15px;
+}
+
+.login_section h4 {
+    margin-bottom: 24px;
+}
+
+#login_email {
+    width: 275px !important;
+    height: 35px;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#login_email::placeholder {
+    font-size: 20px;
+}
+
+#login_password {
+    width: 275px !important;
+    height: 35px;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#login_password::placeholder {
+    font-size: 20px;
+}
+
+#signup_btn {
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: black;
+    padding: 8px 14px;
+    transition: all .5s;
+}
+
+#signup_btn:hover {
+    background-color: rgba(255, 255, 255, 0.782);
+    transition: all .5s;
+}
+
+#signup_route {
+    font-size: 18px;
+}
+
+#login_btn {
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: black;
+    padding: 8px 14px;
+    transition: all .5s;
+
+}
+
+#login_btn:hover {
+    background-color: rgba(255, 255, 255, 0.782);
+    transition: all .5s;
+}
+
+#login_state {
+    font-size: 13px;
+    color: rgb(255, 238, 54);
+}

@@ -12,7 +12,6 @@ var json = require('../Cars.json')
 
 
 export default function Home() {
-    console.log(json.cars)
     let inv = () => {
         window.location.replace("inventory");
     }
