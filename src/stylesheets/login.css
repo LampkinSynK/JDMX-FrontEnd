@@ -140,3 +140,20 @@
     font-size: 13px;
     color: rgb(255, 238, 54);
 }
+
+@media screen and (max-width: 638px) {
+    .signup_section {
+        width: 300px;
+    }
+
+    .login_card {
+        width: 300px;
+    }
+
+    #login_img {
+        display: none;
+    }
+    .login_photo{
+        display: none;
+    }
+}

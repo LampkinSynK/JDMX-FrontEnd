@@ -46,6 +46,7 @@ export default function Nav() {
         <a href="inventory">Inventory</a>
         <a href="terms">Terms & Conditions</a>
         <a href="login">Login/Signup</a>
+        <div><Link to={"/cart?user=" + localStorage.getItem('id')}>Cart</Link></div>
   </div>
   <a href="javascript:void(0);" className="icon" onClick={mobiletab}></a>
     </nav>

@@ -64,3 +64,16 @@
     color: grey;
     font-size: 18px;
 }
+
+@media screen and (max-width: 994px) {
+    .right_flex {
+        margin: 0;
+    }
+    .products {
+        width: 400px;
+    }
+
+    .cart_img {
+        width: 100px;
+    }
+}

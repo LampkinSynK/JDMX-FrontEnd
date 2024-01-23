@@ -450,6 +450,32 @@
     }
 
     @media screen and (max-width: 638px) and (min-width: 280px) {
+
+        #selectBox {
+            display: none;
+        }
+
+        .car_card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 450px;
+        }
+
+        .car_card img {
+            border-radius: 0px 0px 20px 20px;
+            object-fit: cover;
+            width: 300px;
+        }
+
+        .description {
+            width: 300px;
+        }
+
+        .description button{
+            margin: 0px 0px !important;
+        }
+
         .first_car {
             transform: scale(.6);
         }
